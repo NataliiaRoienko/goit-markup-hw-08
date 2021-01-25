@@ -1,0 +1,98 @@
+.about-advantages {
+  // display: none;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+
+  &-list-item {
+    width: 270px;
+  }
+
+  &-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-advantages-list-item {
+    margin-bottom: 30px;
+    width: 350px;
+  }
+  .about-advantages-list-item:not(:last-child) {
+    margin-right: 19px;
+  }
+  .about-advantages-list-item:nth-child(3) {
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-advantages-list-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .about-advantages-list-item:not(:last-child) {
+    margin-right: 0;
+ }
+ .about-advantages-list-item:nth-child(4) {
+  margin-left: -20px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .about-advantages {
+    text-align: center;
+  }
+  
+} 
+
+.about-work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-advantages-list,
+.address-list,
+.about-work-list,
+.team-list,
+.btn-list,
+.projects-list-item,
+.navigation-list {
+  list-style: none;
+}
+
+.about-subtitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.block-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  transition: fill 250ms var(--timing-function);
+}
+
+.advantages-icon {
+  width: 70;
+  height: 70;
+}
+
+
