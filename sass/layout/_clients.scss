@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) { 
+@media screen and (max-width: 1199px) {
   a.clients-link {
     width: 226px;
     margin-bottom: 30px;
@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .clients .title {
     font-size: 28px;
   }
@@ -39,9 +39,9 @@
 
 @media screen and (max-width: 480px) {
   .clients-list {
-    justify-content: center; 
+    justify-content: center;
   }
-} 
+}
 .clients-link {
   display: flex;
   align-items: center;

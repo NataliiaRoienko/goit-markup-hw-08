@@ -6,7 +6,7 @@
   &-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
   }
 
   &-list-item {
@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .about-advantages-list-item {
     margin-bottom: 30px;
     width: 350px;
@@ -31,25 +31,24 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-advantages-list-item {
     width: 100%;
     margin-right: 0;
   }
   .about-advantages-list-item:not(:last-child) {
     margin-right: 0;
- }
- .about-advantages-list-item:nth-child(4) {
-  margin-left: -20px;
-}
+  }
+  .about-advantages-list-item:nth-child(4) {
+    margin-left: -20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .about-advantages {
     text-align: center;
   }
-  
-} 
+}
 
 .about-work-list-item:not(:last-child) {
   margin-right: 30px;
@@ -94,5 +93,3 @@
   width: 70;
   height: 70;
 }
-
-

@@ -189,20 +189,17 @@
   transition: fill 250ms var(--timing-function);
 }
 
-
-
 // Adaptive
-@media screen and (max-width: 1200px) {
-  .footer .container { 
+@media screen and (max-width: 1199px) {
+  .footer .container {
     flex-wrap: wrap;
-  }  
+  }
   .contact-footer .address-list {
     padding-left: 0;
   }
   .contact-footer {
     text-align: center;
     padding-bottom: 60px;
-    
   }
   .contact-footer .address-list {
     text-align: center;
@@ -221,13 +218,13 @@
       margin-right: 0;
     }
   }
-  .footer-form-input{
+  .footer-form-input {
     margin-bottom: 20px;
     margin-right: auto;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contact-info__box {
     flex-wrap: wrap;
     justify-content: center;
@@ -242,12 +239,9 @@
   .social-footer {
     margin-right: 16px;
   }
-  
 }
 
 @media screen and (min-width: 480px) {
-  
 }
-
 
 /* ========== END FOOTER ========== */
