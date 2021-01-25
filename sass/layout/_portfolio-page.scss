@@ -23,6 +23,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .project-thumb img {
   display: block;
   min-width: 100%;
@@ -59,6 +60,7 @@
     opacity: 1;
   }
 }
+
 .portfolio-page .projects-list-item {
   margin-bottom: 30px;
 }
@@ -118,6 +120,19 @@
   color: #757575;
 }
 
+.projects-list-item {
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+}
+
+.projects-link {
+  margin-left: -10px;
+}
+
+.portfolio-page .btn-list {
+  justify-content: center;
+}
+
 @media screen and (min-width: 480px) {
   .portfolio-page .btn-list-item:not(:last-child) {
     margin-right: 9px;
@@ -129,18 +144,7 @@
   .projects-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -31px;
-  }
-
-  .projects-list-item {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
-  }
-  .projects-link {
-    margin-left: -10px;
-  }
-  .portfolio-page .btn-list {
-    justify-content: center;
+    // margin: -31px;
   }
 }
 

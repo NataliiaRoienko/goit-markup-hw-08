@@ -233,6 +233,12 @@ img {
   display: none;
 }
 
+.header .address {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 @media screen and (max-width: 1199px) {
   .navigation-list {
     padding-right: 50px;
@@ -249,12 +255,6 @@ img {
   .header-tel {
     margin-left: 10px;
   }
-}
-
-.header .address {
-  display: flex;
-  justify-content: center;
-  margin: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -780,62 +780,20 @@ img {
 
 /* ========== END HERO ========== */
 .about-advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about-advantages-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .about-advantages-list-item {
-  width: 270px;
-}
-
-.about-advantages-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-@media screen and (max-width: 1199px) {
-  .about-advantages-list-item {
-    margin-bottom: 30px;
-    width: 350px;
-  }
-  .about-advantages-list-item:not(:last-child) {
-    margin-right: 19px;
-  }
-  .about-advantages-list-item:nth-child(3) {
-    margin-left: -20px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .about-advantages-list-item {
-    width: 100%;
-    margin-right: 0;
-  }
-  .about-advantages-list-item:not(:last-child) {
-    margin-right: 0;
-  }
-  .about-advantages-list-item:nth-child(4) {
-    margin-left: -20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .about-advantages {
-    text-align: center;
-  }
-}
-
-.about-work-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
+  max-width: 450px;
 }
 
 .about-advantages-list,
@@ -872,6 +830,46 @@ img {
 .advantages-icon {
   width: 70;
   height: 70;
+}
+
+@media screen and (max-width: 1199px) {
+  .about-advantages-list-item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-advantages-list-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-advantages {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .about-advantages-list-item {
+    width: calc((100% - 4 * 30px) / 4);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.about-work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about-work {
@@ -1057,8 +1055,8 @@ img {
 
 .clients {
   background: #fff;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-list {
@@ -1075,6 +1073,27 @@ img {
 .clients-icon {
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
+.clients-link:hover, .clients-link:focus {
+  border-color: var(--accent-color);
 }
 
 @media screen and (max-width: 1199px) {
@@ -1100,25 +1119,11 @@ img {
   }
 }
 
-.clients-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: border-color 250ms var(--timing-function);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
-}
-
-.clients-link:hover, .clients-link:focus {
-  border-color: var(--accent-color);
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* ========== FOOTER ========== */
@@ -1474,6 +1479,19 @@ img {
   color: #757575;
 }
 
+.projects-list-item {
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+}
+
+.projects-link {
+  margin-left: -10px;
+}
+
+.portfolio-page .btn-list {
+  justify-content: center;
+}
+
 @media screen and (min-width: 480px) {
   .portfolio-page .btn-list-item:not(:last-child) {
     margin-right: 9px;
@@ -1485,17 +1503,6 @@ img {
   .projects-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -31px;
-  }
-  .projects-list-item {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
-  }
-  .projects-link {
-    margin-left: -10px;
-  }
-  .portfolio-page .btn-list {
-    justify-content: center;
   }
 }
 

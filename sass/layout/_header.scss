@@ -158,6 +158,12 @@
   display: none;
 }
 
+.header .address {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 @media screen and (max-width: 1199px) {
   .navigation-list {
     padding-right: 50px;
@@ -177,16 +183,11 @@
   }
 }
 
-.header .address {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
 @media screen and (max-width: 767px) {
   .header-mail {
     padding-bottom: 10px;
   }
+
   .nav-wrapper {
     justify-content: space-between;
   }

@@ -1,7 +1,7 @@
 .clients {
   background: #fff;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &-list {
     display: flex;
@@ -17,6 +17,28 @@
   &-icon {
     fill: #afb1b8;
     transition: fill 250ms var(--timing-function);
+  }
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: border-color 250ms var(--timing-function);
+
+  &:hover .clients-icon,
+  &:focus .clients-icon {
+    fill: var(--accent-color);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
   }
 }
 
@@ -42,24 +64,10 @@
     justify-content: center;
   }
 }
-.clients-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: border-color 250ms var(--timing-function);
 
-  &:hover .clients-icon,
-  &:focus .clients-icon {
-    fill: var(--accent-color);
-  }
-
-  &:hover,
-  &:focus {
-    border-color: var(--accent-color);
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }

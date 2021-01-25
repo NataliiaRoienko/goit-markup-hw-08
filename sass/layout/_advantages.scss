@@ -1,61 +1,18 @@
 .about-advantages {
-  // display: none;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   &-list-item {
-    width: 270px;
+    max-width: 450px;
   }
-
-  &-list-item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .about-advantages-list-item {
-    margin-bottom: 30px;
-    width: 350px;
-  }
-  .about-advantages-list-item:not(:last-child) {
-    margin-right: 19px;
-  }
-  .about-advantages-list-item:nth-child(3) {
-    margin-left: -20px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .about-advantages-list-item {
-    width: 100%;
-    margin-right: 0;
-  }
-  .about-advantages-list-item:not(:last-child) {
-    margin-right: 0;
-  }
-  .about-advantages-list-item:nth-child(4) {
-    margin-left: -20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .about-advantages {
-    text-align: center;
-  }
-}
-
-.about-work-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .about-advantages-list,
@@ -92,4 +49,44 @@
 .advantages-icon {
   width: 70;
   height: 70;
+}
+
+@media screen and (max-width: 1199px) {
+  .about-advantages-list-item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-advantages-list-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-advantages {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .about-advantages-list-item {
+    width: calc((100% - 4 * 30px) / 4);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.about-work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
