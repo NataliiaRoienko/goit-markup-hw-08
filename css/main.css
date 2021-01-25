@@ -1449,8 +1449,6 @@ img {
 }
 
 .projects-subtitle {
-  width: 322px;
-  height: 36px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1469,8 +1467,6 @@ img {
 }
 
 .projects-desc {
-  width: 322px;
-  height: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
