@@ -1183,7 +1183,7 @@ img {
 .contact-info__box {
   display: flex;
   width: 1200px;
-  justify-content: space-between;
+  align-items: baseline;
 }
 
 .contact-info .logo {
@@ -1292,7 +1292,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 16px;
   background-color: inherit;
-  min-width: 290px;
+  min-width: 358px;
   width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1349,9 +1349,6 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .footer .container {
-    flex-wrap: wrap;
-  }
   .footer-form-subscription {
     flex-wrap: wrap;
   }
@@ -1364,27 +1361,52 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer .container {
+    display: block;
+    align-items: center;
+  }
   .contact-info__box {
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .contact-footer {
-    margin-right: 14px;
+    margin-right: 0;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .contact-info .logo {
+    margin-right: 0;
   }
   .footer-form {
     margin-left: 0;
   }
   .social-footer {
-    margin-right: 16px;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .social-footer-desc {
+    text-align: center;
+  }
+  .contact-info .address {
+    text-align: center;
+  }
+  .form-text-footer {
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
   .contact-footer {
-    margin-left: 76px;
-    margin-right: 165px;
+    margin-right: 0;
     text-align: center;
     margin-bottom: 60px;
   }
@@ -1392,16 +1414,16 @@ img {
     text-align: center;
   }
   .social-footer {
-    margin-right: 169px;
     text-align: center;
   }
   .footer-form {
-    margin-left: 166px;
-    margin-right: 152px;
+    margin-left: 0;
     text-align: center;
   }
   .contact-info__box {
+    width: 603px;
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 
