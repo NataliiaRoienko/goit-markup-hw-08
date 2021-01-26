@@ -1018,6 +1018,9 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .team-list-item {
+    width: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .social-info {
@@ -1460,10 +1463,6 @@ img {
   opacity: 1;
 }
 
-.portfolio-page .projects-list-item {
-  margin-bottom: 30px;
-}
-
 .item-button {
   margin-right: 8px;
   margin-top: 15px;
@@ -1514,12 +1513,7 @@ img {
 }
 
 .projects-list-item {
-  flex-basis: calc((100% - 2 * 30px) / 2);
   margin: 15px;
-}
-
-.projects-link {
-  margin-left: -10px;
 }
 
 .portfolio-page .btn-list {
@@ -1537,7 +1531,11 @@ img {
   .projects-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10px;
+    margin: -15px;
+  }
+  .projects-list-item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 
