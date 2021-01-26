@@ -251,6 +251,7 @@ img {
   }
   .header-mail {
     padding-bottom: 10px;
+    margin-right: 0;
   }
   .header-tel {
     margin-left: 10px;
@@ -1064,17 +1065,18 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
+  margin-top: -15px;
   margin-bottom: -15px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .clients-item {
   width: calc((100% - 2 * 30px) / 2);
+  margin-top: 15px;
+  margin-bottom: 15px;
   margin-right: 15px;
   margin-left: 15px;
-}
-
-.clients:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients-icon {
@@ -1125,6 +1127,12 @@ img {
   .clients-item {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clients-list {
+    justify-content: center;
   }
 }
 
