@@ -253,14 +253,14 @@ img {
     padding-bottom: 10px;
     margin-right: 0;
   }
-  .header-tel {
-    margin-left: 10px;
-  }
 }
 
 @media screen and (max-width: 767px) {
   .header-mail {
     padding-bottom: 10px;
+  }
+  .header-tel {
+    margin-left: 10px;
   }
   .nav-wrapper {
     justify-content: space-between;
@@ -1352,25 +1352,6 @@ img {
   .footer .container {
     flex-wrap: wrap;
   }
-  .contact-footer .address-list {
-    padding-left: 0;
-  }
-  .contact-footer {
-    text-align: center;
-    padding-bottom: 60px;
-    margin-left: 26px;
-  }
-  .contact-footer .address-list {
-    text-align: center;
-  }
-  .social-footer {
-    text-align: center;
-    margin-right: 70px;
-    margin-top: 0px;
-  }
-  .footer-form {
-    text-align: center;
-  }
   .footer-form-subscription {
     flex-wrap: wrap;
   }
@@ -1402,7 +1383,25 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-footer {
-    margin-right: 26px;
+    margin-left: 76px;
+    margin-right: 165px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .address-list {
+    text-align: center;
+  }
+  .social-footer {
+    margin-right: 169px;
+    text-align: center;
+  }
+  .footer-form {
+    margin-left: 166px;
+    margin-right: 152px;
+    text-align: center;
+  }
+  .contact-info__box {
+    align-items: baseline;
   }
 }
 
