@@ -1400,6 +1400,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-footer {
+    margin-right: 26px;
+  }
+}
+
 /* ========== END FOOTER ========== */
 /* ========== PORTFOLIO PAGE ========== */
 .portfolio-page {
