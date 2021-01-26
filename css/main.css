@@ -791,6 +791,7 @@ img {
   justify-content: center;
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: -30px;
 }
 
 .about-advantages-list-item {
@@ -838,6 +839,7 @@ img {
     width: calc((100% - 2 * 30px) / 2);
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 30px;
   }
 }
 
